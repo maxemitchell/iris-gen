@@ -1,0 +1,25 @@
+{
+  "name": "iris-gen",
+  "version": "0.0.1",
+  "description": "A Color Palette Helper for Generative Code Art",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxemitchell/iris-gen.git"
+  },
+  "keywords": [
+    "iris",
+    "color",
+    "colors",
+    "palette"
+  ],
+  "author": "Max Mitchell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maxemitchell/iris-gen/issues"
+  },
+  "homepage": "https://github.com/maxemitchell/iris-gen#readme"
+}
