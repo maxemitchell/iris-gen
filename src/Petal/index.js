@@ -7,7 +7,7 @@ export class Petal {
      * @param {string} color - Color in Hexadecimal format.
      * @param {float} probability - floating point percentage between 0. and 1.
      */
-    constructor(color, probability) {
+    constructor(color, probability=1.0) {
         this.color = new Color(color)
         this.probability = probability
     }

@@ -1,4 +1,3 @@
-import { Color } from '../Color'
 import {Petal} from '../Petal'
 
 /** Class representing an Iris Color Palette. */
@@ -10,7 +9,7 @@ export class Iris {
     constructor(colors) {
         this.petals = []
         for(const color of colors){
-            this.petals.push(new Petal(color, 0.0))
+            this.petals.push(new Petal(color))
         }
     }
 }
