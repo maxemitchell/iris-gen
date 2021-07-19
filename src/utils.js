@@ -19,7 +19,7 @@ export const hexToHSL = (hex) => {
     //     throw new IrisException('Invalid Hex Input')
     // }
     const parsedHex = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex)
-    if( parsedHex === null){
+    if(parsedHex === null){
         throw IrisException('Invalid Hexadecimal color')
     }
     let r = parseInt(parsedHex[1], 16)
@@ -31,9 +31,9 @@ export const hexToHSL = (hex) => {
     let h = (max + min) / 2
     let s = (max + min) / 2
     let l = (max + min) / 2
-    if (max == min) {
+    if(max == min){
         h = s = 0
-    } else {
+    }else{
         const d = max - min
         s = l > 0.5 ? d / (2 - max - min) : d / (max + min)
         switch (max) {
