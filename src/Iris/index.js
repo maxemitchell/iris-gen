@@ -14,8 +14,9 @@ export class Iris {
         }
         this.petals = []
         this.numPetals = colors.length
+        const evenProbability = 1.0 / this.numPetals
         for(const color of colors){
-            this.petals.push(new Petal(color))
+            this.petals.push(new Petal(color, evenProbability))
         }
         this.currentPetal = this.petals[0]
     }

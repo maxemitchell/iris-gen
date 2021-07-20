@@ -42,6 +42,10 @@ describe('Iris randomColor Test', () => {
         expect(myIris.randomColor(false, 0.5)).toHaveProperty('l', 100)
         expect(myIris.randomColor(false, 0.51)).toHaveProperty('l', 100)
         expect(myIris.randomColor(false, 0.99)).toHaveProperty('l', 100)
+        expect(myIris.randomColor(true, 0.0)).toHaveProperty('l', 0)
+        expect(myIris.randomColor(true, 0.33)).toHaveProperty('l', 0)
+        expect(myIris.randomColor(true, 0.51)).toHaveProperty('l', 100)
+        expect(myIris.randomColor(true, 0.99)).toHaveProperty('l', 100)
         expect(() => {
             myIris.randomColor(false, 1.0)
         }).toThrowError('Interpolation value not within [1,0)')
@@ -52,7 +56,7 @@ describe('Iris setPetalProbabilities Test', () => {
     const myIris = new Iris(['#000000', '#ffffff'])
 
     test('should properly update probabilities', () => {
-        expect(myIris.currentPetal).toHaveProperty('probability', 1.0)
+        expect(myIris.currentPetal).toHaveProperty('probability', 0.5)
         myIris.setPetalProbabilities([1.0, 0.0])
         expect(myIris.currentPetal).toHaveProperty('probability', 1.0)
         myIris.setPetalProbabilities([0.0, 1.0])
