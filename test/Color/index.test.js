@@ -1,4 +1,4 @@
-import { Color } from '../../src/Color'
+import Color from '../../src/Color'
 
 describe('Color Class Test', () => {
     test('should have a hue', () => {

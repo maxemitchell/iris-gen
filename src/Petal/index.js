@@ -1,7 +1,7 @@
-import { Color } from '../Color'
+import Color from '../Color'
 
 /** Class representing a Petal. */
-export class Petal {
+export default class Petal {
     /**
      * Create a Petal.
      * @param {string} color - Color in Hexadecimal format.

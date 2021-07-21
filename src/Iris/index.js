@@ -1,9 +1,9 @@
-import {Petal} from '../Petal'
+import Petal from '../Petal'
 import { randomPalette } from '../palettes'
 import { IrisException } from '../utils'
 
 /** Class representing an Iris Color Palette. */
-export class Iris {
+export default class Iris {
     /**
      * Create an Iris Color Palette.
      * @param {string[]} [colors=null] - Array of colors in Hexadecimal format, if not used .

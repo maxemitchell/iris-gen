@@ -1,4 +1,4 @@
-import { Iris } from '../../src/Iris'
+import Iris from '../../src/Iris'
 
 describe('Iris Constructor Test', () => {
     const myIris = new Iris(['#000000', '#ffffff'])

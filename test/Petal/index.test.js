@@ -1,4 +1,4 @@
-import { Petal } from '../../src/Petal'
+import Petal from '../../src/Petal'
 
 describe('Petal Class Test', () => {
     test('should have a color', () => {

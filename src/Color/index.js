@@ -1,7 +1,7 @@
 import { hexToHSL } from '../utils'
 
 /** Class representing a Color. */
-export class Color {
+export default class Color {
     /**
      * Create a Color.
      * @param {string} hex - String in hex representation
