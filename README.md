@@ -1,10 +1,10 @@
 # iris-gen
 
-### A JavaScript Color Palette Library
+## A JavaScript Color Palette Library
 
 Designed for use in generative code art projects, this package provides an easy way to utilize custom color palettes in a wide variety of ways. 
 
-## What is an Iris?
+## An Iris Explained
 An Iris is a color palette class with some extra functionality. It is composed of Petals, each with an HSL color and a probability. The Iris has a currentPetal that keeps track of the state, allowing the user to choose when to update to the next color. You can also use the randomColor() function to randomly retrieve a color from the palette.
 
 I know, this seems like a lot of bloat for a color palette, but this allows me to both easily retreive a random color, interpolate colors within a gradient, and keep the state to use one color many times before picking another random one.
