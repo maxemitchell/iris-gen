@@ -2,6 +2,7 @@
 
 ## A JavaScript Color Palette Library
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c5f3e38b2fab4afe8901ecb8e5eda4a1)](https://app.codacy.com/gh/maxemitchell/iris-gen?utm_source=github.com&utm_medium=referral&utm_content=maxemitchell/iris-gen&utm_campaign=Badge_Grade_Settings)
+[![npm version](https://badge.fury.io/js/iris-gen.svg)](https://badge.fury.io/js/iris-gen)
 
 Designed for use in generative code art projects, this package provides an easy way to utilize custom color palettes in a wide variety of ways. 
 
