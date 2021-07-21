@@ -2,10 +2,10 @@
  * IrisException type definition
  * @param {string} message 
  */
-export const IrisException = (message) => {
-    return {
-        message: message,
-        name: 'IrisException'
+export class IrisException extends Error{
+    constructor(message) {
+        super(message)
+        this.name = 'IrisException'
     }
 }
 
@@ -15,12 +15,9 @@ export const IrisException = (message) => {
  * @return {{h: number, s: numbner, l: number}} A color in HSL format.
  */
 export const hexToHSL = (hex) => {
-    // if( typeof hex !== 'sting'){
-    //     throw new IrisException('Invalid Hex Input')
-    // }
     const parsedHex = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex)
     if(parsedHex === null){
-        throw IrisException('Invalid Hexadecimal color')
+        throw new IrisException('Invalid Hexadecimal color')
     }
     let r = parseInt(parsedHex[1], 16)
     let g = parseInt(parsedHex[2], 16)

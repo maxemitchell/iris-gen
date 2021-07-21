@@ -29,7 +29,7 @@ export default class Iris {
      */
     randomColor(useProbabilities = false, interpolationValue=null) {
         if(interpolationValue >= 1.0 || interpolationValue < 0.){
-            throw IrisException('Interpolation value not within [1,0)')
+            throw new IrisException('Interpolation value not within [1,0)')
         }
         if(interpolationValue === null){
             interpolationValue = Math.random()
@@ -53,14 +53,14 @@ export default class Iris {
      */
     setPetalProbabilities(probabilities) {
         if(probabilities.length !== this.numPetals){
-            throw IrisException('Size of probabilities array does not match number of petals')
+            throw new IrisException('Size of probabilities array does not match number of petals')
         }
         let sum = 0
         for(const probability of probabilities){
             sum = sum + probability
         }
         if(sum !== 1.0){
-            throw IrisException('Probabilities do not add up to 1.0')
+            throw new IrisException('Probabilities do not add up to 1.0')
         }
         for(let i = 0; i < probabilities.length; i++){
             this.petals[i].updateProbability(probabilities[i])

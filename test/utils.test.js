@@ -2,13 +2,13 @@ import { IrisException, hexToHSL } from '../src/utils'
 
 describe('IrisException Test', () => {
     test('should have a name with value IrisException', () => {
-        const irisException = IrisException()
+        const irisException = new IrisException()
 
         expect(irisException).toHaveProperty('name', 'IrisException')
     })
 
     test('should have a message with value testMessage', () => {
-        const irisException = IrisException('testMessage')
+        const irisException = new IrisException('testMessage')
 
         expect(irisException).toHaveProperty('message', 'testMessage')
     })
