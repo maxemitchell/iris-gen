@@ -43,7 +43,7 @@ export default class Iris {
                 }
             }
         }else{
-            return this.petals[this.numPetals * interpolationValue << 0].color;
+            return this.petals[this.numPetals * interpolationValue << 0].color
         }
     }
 
@@ -52,14 +52,14 @@ export default class Iris {
      * @param {float[]} probabilities - Custom probabilities array that must add up to 1.0
      */
     setPetalProbabilities(probabilities) {
-        if(probabilities.length != this.numPetals){
+        if(probabilities.length !== this.numPetals){
             throw IrisException('Size of probabilities array does not match number of petals')
         }
         let sum = 0
         for(const probability of probabilities){
             sum = sum + probability
         }
-        if(sum != 1.0){
+        if(sum !== 1.0){
             throw IrisException('Probabilities do not add up to 1.0')
         }
         for(let i = 0; i < probabilities.length; i++){

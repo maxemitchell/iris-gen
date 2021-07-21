@@ -31,7 +31,7 @@ export const hexToHSL = (hex) => {
     let h = (max + min) / 2
     let s = (max + min) / 2
     let l = (max + min) / 2
-    if(max == min){
+    if(max === min){
         h = s = 0
     }else{
         const d = max - min
