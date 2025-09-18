@@ -1,6 +1,6 @@
 {
   "name": "iris-gen",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A Color Palette Helper for Generative Code Art",
   "main": "src/index.js",
   "type": "module",
